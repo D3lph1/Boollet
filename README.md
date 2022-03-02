@@ -2,6 +2,9 @@
 
 Boollet is a boolean algebra toolkit for PHP.
 
+[![PHP Version Require](http://poser.pugx.org/d3lph1/boollet/require/php)](https://packagist.org/packages/d3lph1/boollet)
+[![License](http://poser.pugx.org/d3lph1/boollet/license)](https://packagist.org/packages/d3lph1/boollet)
+
 ## Features
 
 - [x] Expression object API
