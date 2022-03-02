@@ -1,0 +1,29 @@
+{
+  "name": "d3lph1/boollet",
+  "description": "Boollet is a boolean algebra toolkit for PHP",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Bogdan",
+      "email": "d3lph1.contact@gmail.com"
+    }
+  ],
+  "require": {
+    "php": "^8.1",
+    "dan-da/texttable-php": "^1.0"
+  },
+  "require-dev": {
+    "symfony/var-dumper": "^6.0",
+    "phpunit/phpunit": "^9.5"
+  },
+  "autoload": {
+    "psr-4": {
+      "D3lph1\\Boollet\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "D3lph1\\Boollet\\Tests\\": "tests"
+    }
+  }
+}
