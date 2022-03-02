@@ -1,6 +1,6 @@
 {
   "name": "d3lph1/boollet",
-  "description": "Boollet is a boolean algebra toolkit for PHP",
+  "description": "Boolean algebra toolkit for PHP",
   "license": "MIT",
   "authors": [
     {

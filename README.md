@@ -55,7 +55,7 @@ $val = $expr->evaluate(['A' => true, 'B' => true, 'Z' => true]) // false
 
 ### Value binding
 
-In the example above there are only static variable value which could not be changed dynamically without expression reconstructing.
+In the example above there are only static variable values which could not be changed dynamically without expression reconstructing.
 
 To change value of variable at runtime you should use `Variable::set()` method. For convenient batch value setup there is `ValueBinder` class:
 
@@ -138,6 +138,20 @@ use D3lph1\Boollet\NormalForm\NormalForms;
 
 $ccnf = NormalForms::calculateCompleteConjunctive($expr); // ((X ⋁ (!Y ⋁ Z)) ⋀ ((X ⋁ (!Y ⋁ !Z)) ⋀ (!X ⋁ (Y ⋁ Z))))
 $cdnf = NormalForms::calculateCompleteDisjunctive($expr); // ((!X ⋀ (!Y ⋀ !Z)) ⋁ ((!X ⋀ (!Y ⋀ Z)) ⋁ ((X ⋀ (!Y ⋀ Z)) ⋁ ((X ⋀ (Y ⋀ !Z)) ⋁ (X ⋀ (Y ⋀ Z))))))
+```
+
+### Zhegalkin Polynomial calculation
+
+For such needs you can use `ZhegalkinPolynomial` utility class:
+
+```php
+use \D3lph1\Boollet\ZhegalkinPolynomial;
+
+// $expr ~ (!X → ((!Y ⊕ X) ⋀ !Z))
+
+$polynomial = ZhegalkinPolynomial::calculate($expr);
+
+echo $polynomial; // ((Z ⋀ (Y ⋀ X)) ⊕ ((Y ⋀ X) ⊕ ((Z ⋀ X) ⊕ ((Z ⋀ Y) ⊕ (Y ⊕ (Z ⊕ 1))))))
 ```
 
 ### SAT and UNSAT solvers

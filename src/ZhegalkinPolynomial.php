@@ -15,6 +15,9 @@ final class ZhegalkinPolynomial
     {
     }
 
+    /**
+     * Building Zhegalkin polynomial by the Triangle Method.
+     */
     public static function calculate(Expression $expr): Expression
     {
         $triangle = self::buildTriangle($expr->toVectorValuedFunction());
