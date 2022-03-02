@@ -7,12 +7,12 @@ Boollet is a boolean algebra toolkit for PHP.
 
 ## Features
 
-- [x] Expression object API
-- [x] Expression parser
-- [x] Building truth tables
-- [x] Complete conjunctive/disjunctive normal form calculation
-- [x] Zhegalkin Polynomial calculation
-- [x] SAT and UNSAT solvers
+- [x] [Expression object API](#value-binding)
+- [x] [Expression parser](#expression-parser)
+- [x] [Building truth tables](#building-truth-table)
+- [x] [Complete conjunctive/disjunctive normal form calculation](#complete-conjunctivedisjunctive-normal-form-calculation)
+- [x] [Zhegalkin Polynomial calculation](#zhegalkin-polynomial-calculation)
+- [x] [SAT and UNSAT solvers](#sat-and-unsat-solvers)
 
 ## Requirements
 
