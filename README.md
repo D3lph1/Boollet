@@ -1,3 +1,7 @@
+<div align="center">
+    <img width="250" height="250" src="logo.png">
+</div>
+
 # Boollet
 
 Boollet is a boolean algebra toolkit for PHP.
